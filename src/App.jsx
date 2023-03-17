@@ -1,12 +1,28 @@
 import React from "react";
-import styles from "./style"
+import styles from "./style";
+import {useState} from 'react';
 
-import { Benefit, Contact, Footer, Hero, Navbar, Portfolio, Reference, Service } from "./components";
+import { Benefit, Contact, Footer, Hero, Navbar, Portfolio, Reference, Service, ContactForm } from "./components";
 
-const App = () => (
+const App = () => { 
+  
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeBackground);
+
+  return (
+
   <div className="bg-white w-full overflow-hidden">
     <div className="overflow-hidden">
-      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${navbar ? "navbar-active" : "navbar"} fixed w-full z-10 top-0 ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>     
@@ -26,7 +42,8 @@ const App = () => (
         <Portfolio /> 
         <Benefit /> 
         <Reference /> 
-        <Contact /> 
+        <Contact />
+        <ContactForm /> 
       </div>
     </div>
 
@@ -37,11 +54,14 @@ const App = () => (
     </div>
 
 
+
     
 
 
 
   </div>
+  
 )
+}
 
 export default App

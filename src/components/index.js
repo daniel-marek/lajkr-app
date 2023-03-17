@@ -7,6 +7,7 @@ import Reference from "./Reference";
 import Service from "./Service";
 import FeedbackCard from "./FeedbackCard";
 import Footer from "./Footer";
+import ContactForm from "./ContactForm";
 
 export {
   Navbar,
@@ -18,4 +19,5 @@ export {
   Service,
   FeedbackCard,
   Footer,
+  ContactForm,
 };
