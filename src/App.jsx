@@ -43,7 +43,6 @@ const App = () => {
         <Benefit /> 
         <Reference /> 
         <Contact />
-        <ContactForm /> 
       </div>
     </div>
 

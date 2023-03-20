@@ -21,10 +21,6 @@ export const navLinks = [
     id: "reference",
     title: "Reference",
   },
-  {
-    id: "kontakt",
-    title: "Kontakt",
-  },
 ];
 
 export const offer = [
