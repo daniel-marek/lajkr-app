@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./style";
 import {useState} from 'react';
+import SocialniSite from "./pages/SocialniSite";
+import { Route, Routes} from "react-router-dom";
 
 import { Benefit, Contact, Footer, Hero, Navbar, Portfolio, Reference, Service, ContactForm } from "./components";
 
@@ -31,6 +33,11 @@ const App = () => {
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
+
+          <Routes>
+            <Route path="/" element={<SocialniSite/>} />
+          </Routes>
+          
         </div>
       </div>
 
@@ -51,6 +58,7 @@ const App = () => {
         <Footer />
       </div>
     </div>
+
 
 
 
