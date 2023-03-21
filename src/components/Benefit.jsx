@@ -17,7 +17,7 @@ const Benefit = () => {
   return (
     <section id="vyhody" className={`${layout.sectionCol}`}>
       <div className={layout.sectionInfo}>
-        <h3 className={styles.heading3}>Hlavní výhody</h3>
+        <h3 className={styles.heading3}>Hlavní výhod</h3>
         <h2 className={styles.heading2}>Proč s námi spolupracovat</h2>
       </div>
       <div className={`grid sm:grid-cols-2 md:grid-cols-3 gap-8`}>
