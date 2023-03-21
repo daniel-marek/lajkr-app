@@ -34,9 +34,7 @@ const App = () => {
         <div className={`${styles.boxWidth}`}>
           <Hero />
 
-          <Routes>
-            <Route path="/" element={<SocialniSite/>} />
-          </Routes>
+          
           
         </div>
       </div>
@@ -45,11 +43,15 @@ const App = () => {
 
     <div className={`bg-white ${styles.paddingX} ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
+        <Routes>
+          <Route path="/socialni-site" element={<SocialniSite/>} />
+        </Routes>
         <Service />
         <Portfolio /> 
         <Benefit /> 
         <Reference /> 
         <Contact />
+        <SocialniSite />
       </div>
     </div>
 

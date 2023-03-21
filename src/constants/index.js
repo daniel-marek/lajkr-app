@@ -21,6 +21,10 @@ export const navLinks = [
     id: "reference",
     title: "Reference",
   },
+  {
+    id: "socialni-site",
+    title: "Sociální sítě",
+  },
 ];
 
 export const offer = [

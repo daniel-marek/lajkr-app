@@ -9,9 +9,9 @@ const Navbar = () => {
 
   return (
     <nav className={`w-full flex py-6 justify-between items-center z-[100]`}>
-      <a href='#uvod'>
+      <Link to='/'>
         <img src={logoWhite} alt="lajkr" className='h-[32px]'/>
-      </a>
+      </Link>
 
       <ul className='list-none sm:flex hidden justify-end items-center flex-1'>
         {navLinks.map((nav, index) => (
@@ -24,6 +24,7 @@ const Navbar = () => {
             </a>
           </li>
         ))}
+          <CustomLink  to="/socialni-site">Socka</CustomLink>
       </ul>
       <Button link="#kontakt" styles="text-base !font-medium ml-10 hover:bg-[#056A5E] hidden sm:flex" text="Kontaktovat"/>
 
@@ -60,6 +61,19 @@ const Navbar = () => {
       </div>
       
     </nav>
+  )
+}
+
+const CustomLink = ({ to, children, ...props}) => {
+  const path = window.location.pathname
+
+  return (
+    <li className={ path === to ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+
+    </li>
   )
 }
 
