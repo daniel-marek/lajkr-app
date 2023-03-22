@@ -3,11 +3,26 @@ import { close, logoWhite, menu } from "../assets";
 import { navLinks } from '../constants';
 import Button from './Button';
 import { Link } from 'react-router-dom';
+import styles from '../style';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
+  const [navbar, setNavbar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 80) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeBackground);
+
   return (
+    <div className={`${navbar ? "navbar-active" : "navbar"} fixed w-full z-10 top-0 ${styles.paddingX} ${styles.flexCenter}`}>
+        <div className={`${styles.boxWidth}`}>
     <nav className={`w-full flex py-6 justify-between items-center z-[100]`}>
       <Link to='/'>
         <img src={logoWhite} alt="lajkr" className='h-[32px]'/>
@@ -19,12 +34,12 @@ const Navbar = () => {
             key={nav.id}
             className={`font-grotesk font-medium cursor-pointer text-[16px] ${index === navLinks.length - 1 ? "mr-0" : "mr-10"} text-white duration-500 hover:text-dimWhite relative underline-link`}
           >
-            <a href={`#${nav.id}`}>
+            <a href={`${nav.id}`}>
               {nav.title}
             </a>
           </li>
         ))}
-          <CustomLink  to="/socialni-site">Socka</CustomLink>
+          <CustomLink to="/socialni-site">Socka</CustomLink>
       </ul>
       <Button link="#kontakt" styles="text-base !font-medium ml-10 hover:bg-[#056A5E] hidden sm:flex" text="Kontaktovat"/>
 
@@ -61,6 +76,8 @@ const Navbar = () => {
       </div>
       
     </nav>
+    </div>
+    </div>
   )
 }
 

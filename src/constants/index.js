@@ -2,28 +2,24 @@ import { facebook, instagram, desktop, palette, rehabilitace, rehabilitaceLogo, 
 
 export const navLinks = [
   {
-    id: "uvod",
+    id: "/#uvod",
     title: "Úvod",
   },
   {
-    id: "sluzby",
+    id: "#sluzby",
     title: "Služby",
   },
   {
-    id: "projekty",
+    id: "/#projekty",
     title: "Projekty",
   },
   {
-    id: "vyhody",
+    id: "/#vyhody",
     title: "Výhody",
   },
   {
-    id: "reference",
+    id: "/#reference",
     title: "Reference",
-  },
-  {
-    id: "socialni-site",
-    title: "Sociální sítě",
   },
 ];
 
