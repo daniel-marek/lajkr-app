@@ -33,10 +33,6 @@ const App = () => {
       <div className={`bg-primary ${styles.flexStart}`}>
         <div className={`${styles.boxWidth}`}>
           <Hero />
-
-          <Routes>
-            <Route path="/" element={<SocialniSite/>} />
-          </Routes>
           
         </div>
       </div>

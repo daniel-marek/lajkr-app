@@ -1,6 +1,6 @@
 import { offer } from "../constants"
 import styles, { layout } from "../style"
-import { googleAds, sklik, facebookService, instagramService, tiktok } from "../assets"
+import { gooppc, sklik, facebookService, instagramService, tiktok } from "../assets"
 
 const OfferCard = ({ icon, title, content, index }) => (
   <div className={`flex flex-col gap-6 xs:flex-row p-6 rounded-[20px] ${styles.border} box-shadow ${index !== offer.length - 1 ? "mb-6" : "mb-0"}`}>
@@ -24,8 +24,8 @@ const service = () => {
         <p className={`${styles.paragraph} max-w-[480px]`}>Nabízíme celou řadu služeb, které vám mohou pomoci rozšířit váš online byznys a zlepšit viditelnost vaší značky na internetu.</p>
         <p className={`${styles.paragraph} max-w-[480px] mt-4`}>S naším týmem zkušených webdesignerů a vývojářů vám pomůžeme vytvořit moderní a optimalizovanou online prezentaci, která osloví vaše zákazníky.</p>
         <p className={`${styles.paragraph} max-w-[480px] mt-4 mb-10`}>Webové stránky bez návštěvnosti, ale nebudou fungovat proto dále nabízíme i péči o vaše PPC kampaně, sociální sítě a o samotný e-mail marketing.</p>
-        <div className="flex gap-8 w-full">
-          <img src={googleAds} alt="google-ads" className="h-[38px]"/>
+        <div className="flex justify-center xs:justify-start gap-8 w-full flex-wrap">
+          <img src={gooppc} alt="google-ads" className="h-[38px]"/>
           <img src={sklik} alt="google-ads" className="w-[120px]"/>
           <img src={facebookService} alt="google-ads" className="h-[38px]"/>
           <img src={instagramService} alt="google-ads" className="h-[38px]"/>

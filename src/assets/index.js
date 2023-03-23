@@ -28,7 +28,7 @@ import danielMarek from "./danielMarek.jpg";
 import phone from "./phone.svg";
 import email from "./email.svg";
 import ppc from "./ppc.svg";
-import googleAds from "./googleAds.svg";
+import gooppc from "./gooppc.svg";
 import sklik from "./sklik.svg";
 import facebookService from "./facebookService.svg";
 import instagramService from "./instagramService.svg";
@@ -69,7 +69,7 @@ export {
   phone,
   email,
   ppc,
-  googleAds,
+  gooppc,
   sklik,
   facebookService,
   instagramService, 
