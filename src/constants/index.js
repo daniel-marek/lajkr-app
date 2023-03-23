@@ -1,4 +1,4 @@
-import { facebook, instagram, desktop, palette, rehabilitace, rehabilitaceLogo, frydek, frydekLogo, dalphen, dalphenLogo, fitness, fitnessLogo, conversation, pencil, agreement, support, list, community, phone, email  } from "../assets";
+import { facebook, instagram, desktop, palette, rehabilitace, rehabilitaceLogo, frydek, frydekLogo, dalphen, dalphenLogo, fitness, fitnessLogo, conversation, pencil, agreement, support, list, community, phone, email, ppc, socialMarketing, emailMarketing  } from "../assets";
 
 export const navLinks = [
   {
@@ -31,13 +31,35 @@ export const offer = [
     content:
       "Webové stránky jsou spolu s vaším logem nejdůležitějším aspektem vaší značky. Vytvořím vám moderní a funkční web, který bude vypadat skvěle na počítači i v mobilu.",
   },
+  // {
+  //   id: "offer-2",
+  //   icon: palette,
+  //   title: "Grafické návrhy a branding",
+  //   content:
+  //     "Vytvořím pro vás zajímavou a poutavou grafiku, která zaujme vaše potenciální zákazníky. Mojí největší vášní je tvorba loga, reklamních bannerů, vizitek, letáků a dalších tiskovin.",
+  // },
   {
     id: "offer-2",
-    icon: palette,
-    title: "Grafické návrhy a branding",
+    icon: ppc,
+    title: "PPC kampaně",
     content:
-      "Vytvořím pro vás zajímavou a poutavou grafiku, která zaujme vaše potenciální zákazníky. Mojí největší vášní je tvorba loga, reklamních bannerů, vizitek, letáků a dalších tiskovin.",
+      "Specializujeme se i na správu PPC kampaní. Nabízíme komplexní služby, které zahrnují tvorbu a optimalizaci reklamních kampaní, sledování výkonu kampaní a průběžné reportingy.",
   },
+  {
+    id: "offer-3",
+    icon: socialMarketing,
+    title: "Sociální sítě",
+    content:
+      "V dnešní době jsou sociální sítě nezbytnou součástí každodenního života a jsou velmi důležité pro vaši značku. Nabízíme kompletní správu, která zahrnuje i placené kampaně a komunikaci s fanoušky.",
+  },
+  {
+    id: "offer-4",
+    icon: emailMarketing,
+    title: "E-mail marketing",
+    content:
+      "S naší službou emailového marketingu můžete posílat personalizované a cílené zprávy svým stávajícím i potenciálním zákazníkům, což vám umožní zvýšit návštěvnost vašeho webu či získat nové zákazníky.",
+  },
+  
 ];
 
 export const benefit = [
@@ -57,7 +79,7 @@ export const benefit = [
     id: "benefit-3",
     icon: support,
     title: "Stálá podpora",
-    content: "Předáním webových stránek naše spolupráce nekončí, rádi se o váš web budeme starat.",
+    content: "Předáním webových stránek naše spolupráce nekončí, rádi se vám postaráme i o reklamu.",
   },
   {
     id: "benefit-4",
@@ -146,9 +168,9 @@ export const contact = [
   },
   {
     id: 3,
-    name: "kontakt@lajkr.cz",
+    name: "info@lajkr.cz",
     icon: email,
-    link: "mailto:kontakt@lajkr.cz",
+    link: "mailto:info@lajkr.cz",
   },
   {
     id: 4,

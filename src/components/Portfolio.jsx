@@ -4,7 +4,7 @@ import { projects } from '../constants'
 const ProjectCard = ({ id, img, logo, title, content, url }) => (
   <div className={`h-[500px] w-full relative bg-primary rounded-[20px] overflow-hidden box-shadow ${styles.border}`}>
 
-  <div className='h-full w-full bg-no-repeat bg-cover bg-center p-8 opacity-60 absolute' style={{
+  <div className='h-full w-full bg-no-repeat bg-cover bg-center p-8 opacity-50 absolute' style={{
     backgroundImage: `url(${img})`
   }}>
   </div>

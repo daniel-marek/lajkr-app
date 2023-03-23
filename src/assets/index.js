@@ -27,6 +27,15 @@ import googleLogo from "./googleLogo.svg";
 import danielMarek from "./danielMarek.jpg";
 import phone from "./phone.svg";
 import email from "./email.svg";
+import ppc from "./ppc.svg";
+import googleAds from "./googleAds.svg";
+import sklik from "./sklik.svg";
+import facebookService from "./facebookService.svg";
+import instagramService from "./instagramService.svg";
+import tiktok from "./tiktok.svg";
+import socialMarketing from "./socialMarketing.svg";
+import emailMarketing from "./emailMarketing.svg";
+
 
 
 export {
@@ -58,5 +67,13 @@ export {
   googleLogo, 
   danielMarek,
   phone,
-  email
+  email,
+  ppc,
+  googleAds,
+  sklik,
+  facebookService,
+  instagramService, 
+  tiktok,
+  socialMarketing, 
+  emailMarketing,
 };
