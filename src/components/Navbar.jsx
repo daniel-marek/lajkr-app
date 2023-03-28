@@ -6,9 +6,20 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const [btn, setBtn] = useState(false);
+
+  const changeButton = () => {
+    if (window.scrollY >= 80) {
+      setBtn(true);
+    } else {
+      setBtn(false);
+    }
+  }
+
+  window.addEventListener("scroll", changeButton);
 
   return (
-    <nav className={`w-full flex py-6 justify-between items-center z-[100]`}>
+    <nav className={`w-full flex justify-between items-center z-[100]`}>
       <a href='#uvod'>
         <img src={logoWhite} alt="lajkr" className='h-[32px]'/>
       </a>
@@ -25,7 +36,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <Button link="#kontakt" styles="text-base !font-medium ml-10 hover:bg-[#056A5E] hidden sm:flex" text="Kontaktovat"/>
+      <Button link="#kontakt" styles={`${btn ? "!py-[0.6rem]" : "py-10"} text-base !font-medium ml-10 hover:bg-[#056A5E] hidden sm:flex`} text="Kontaktovat"/>
 
       <div className='sm:hidden flex flex-1 justify-end items-center'>
         <img 

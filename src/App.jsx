@@ -17,14 +17,14 @@ const App = () => {
       setNavbar(false);
     }
   }
-
+ 
   window.addEventListener("scroll", changeBackground);
 
   return (
 
   <div className="bg-white w-full overflow-hidden">
     <div className="overflow-hidden">
-      <div className={`${navbar ? "navbar-active" : "navbar"} fixed w-full z-10 top-0 ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${navbar ? "navbar-active md:py-4" : "navbar"} py-6 fixed w-full z-10 top-0 ${styles.paddingX} ${styles.flexCenter}`}>
         <div className={`${styles.boxWidth}`}>
           <Navbar />
         </div>     

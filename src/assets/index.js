@@ -3,7 +3,7 @@ import menu from "./menu.svg";
 import close from "./close.svg";
 import facebook from "./facebook.svg";
 import instagram from "./instagram.svg";
-import hero from "./hero.png";
+import hero from "./hero.webp";
 import logoBlack from "./logoBlack.svg";
 import logoWhite from "./logoWhite.svg";
 import desktop from "./desktop.svg";

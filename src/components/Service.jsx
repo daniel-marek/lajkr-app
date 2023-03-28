@@ -23,7 +23,7 @@ const service = () => {
         <h2 className={`${styles.heading2} mb-10`}>Co pro vás můžeme udělat?</h2>
         <p className={`${styles.paragraph} max-w-[480px]`}>Nabízíme celou řadu služeb, které vám mohou pomoci rozšířit váš online byznys a zlepšit viditelnost vaší značky na internetu.</p>
         <p className={`${styles.paragraph} max-w-[480px] mt-4`}>S naším týmem zkušených webdesignerů a vývojářů vám pomůžeme vytvořit moderní a optimalizovanou online prezentaci, která osloví vaše zákazníky.</p>
-        <p className={`${styles.paragraph} max-w-[480px] mt-4 mb-10`}>Webové stránky bez návštěvnosti, ale nebudou fungovat proto dále nabízíme i péči o vaše PPC kampaně, sociální sítě a o samotný e-mail marketing.</p>
+        <p className={`${styles.paragraph} max-w-[480px] mt-4 mb-10`}>Webové stránky slouží jako skvělá vizitka, ale sám o sobě nové poptávky nepřivede. Dle vašich podnikatelských cílů připravíme marketingovou strategii a postaráme se vám o vše od sociálních sítí přes PPC kampaně a e-mail marketing až po SEO.</p>
         <div className="flex justify-center xs:justify-start gap-8 w-full flex-wrap">
           <img src={gooppc} alt="google-ads" className="h-[38px]"/>
           <img src={sklik} alt="google-ads" className="w-[120px]"/>

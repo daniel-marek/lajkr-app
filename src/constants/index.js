@@ -79,13 +79,13 @@ export const benefit = [
     id: "benefit-3",
     icon: support,
     title: "Stálá podpora",
-    content: "Předáním webových stránek naše spolupráce nekončí, rádi se vám postaráme i o reklamu.",
+    content: "O webové stránky je potřeba pečovat i po jejich spuštění, a proto budeme vždy na blízku.",
   },
   {
     id: "benefit-4",
     icon: list,
     title: "Komplexní řešení",
-    content: "Od nákupu domény přes vývoj webových stránek až po tisk firemních materiálů.",
+    content: "Od nákupu domény, přes vytvoření webových stránek až po marketingové činnosti.",
   },
   {
     id: "benefit-5",
